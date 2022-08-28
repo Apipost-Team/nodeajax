@@ -1,0 +1,26 @@
+{
+  "name": "nodeajax",
+  "version": "1.0.0",
+  "description": "Implementing Ajax request of jQuery with node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apipost-Team/nodeajax.git"
+  },
+  "keywords": [
+    "jquery",
+    "ajax",
+    "node",
+    "xhr",
+    "axios"
+  ],
+  "author": "apipost-lab001 <admin@apipost.cn> (https://github.com/Apipost-Team)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Apipost-Team/nodeajax/issues"
+  },
+  "homepage": "https://github.com/Apipost-Team/nodeajax#readme"
+}
