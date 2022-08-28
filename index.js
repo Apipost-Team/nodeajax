@@ -14,8 +14,7 @@ function nodeAjax(options) {
     };
   }
   const _target = ajaxPara2Apipost(options);
-
-  const request = new apipostRequest({});
+  const request = new apipostRequest({ timeout: _.isNumber(options.timeout) && options.timeout >= 0 ? options.timeout : 5000 });
 
   request.request(_target).then((data) => {
     if (_.isObject(data) && data.status == 'success' && _.has(data, 'data.response.rawBody')) {
