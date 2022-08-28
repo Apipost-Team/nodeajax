@@ -9,13 +9,13 @@ Implementing Ajax request of jQuery with node.
 ## Install
 
 ```
-$ npm install nodeajax
+$ npm install ajax-for-node
 ```
 
 ##  Usage
 ### render
 ```javascript
-const nodeAjax = require('nodeajax');
+const nodeAjax = require('ajax-for-node');
 
 var formData = new FormData();
 formData.append("username", "Groucho");

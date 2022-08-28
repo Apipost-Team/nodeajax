@@ -1,5 +1,5 @@
 {
-  "name": "node-ajax",
+  "name": "ajax-for-node",
   "version": "1.0.1",
   "description": "Implementing Ajax request of jQuery with node.",
   "main": "index.js",
