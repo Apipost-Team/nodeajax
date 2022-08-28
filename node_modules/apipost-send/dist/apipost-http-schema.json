@@ -1,0 +1,129 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "target_id": {
+            "type": "string"
+        },
+        "method": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "request": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string"
+                },
+                "auth": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string"
+                        },
+                        "kv": {
+                            "type": "object",
+                            "properties": {
+                                "key": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "key",
+                                "value"
+                            ]
+                        },
+                        "bearer": {
+                            "type": "object",
+                            "properties": {
+                                "key": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "key"
+                            ]
+                        },
+                        "basic": {
+                            "type": "object",
+                            "properties": {
+                                "username": {
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "username",
+                                "password"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "type"
+                    ]
+                },
+                "body": {
+                    "type": "object",
+                    "properties": {
+                        "mode": {
+                            "type": "string"
+                        },
+                        "parameter": {
+                            "type": "array"
+                        },
+                        "raw": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "mode",
+                        "parameter",
+                        "raw"
+                    ]
+                },
+                "header": {
+                    "type": "object",
+                    "properties": {
+                        "parameter": {
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "parameter"
+                    ]
+                },
+                "query": {
+                    "type": "object",
+                    "properties": {
+                        "parameter": {
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "parameter"
+                    ]
+                }
+            },
+            "required": [
+                "url",
+                "auth",
+                "body",
+                "header",
+                "query"
+            ]
+        }
+    },
+    "required": [
+        "target_id",
+        "method",
+        "url",
+        "request"
+    ]
+}
