@@ -1,6 +1,6 @@
 {
   "name": "nodeajax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implementing Ajax request of jQuery with node.",
   "main": "index.js",
   "scripts": {
