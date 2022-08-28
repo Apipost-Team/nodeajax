@@ -13,7 +13,6 @@ $ npm install ajax-for-node
 ```
 
 ##  Usage
-### render
 ```javascript
 const nodeAjax = require('ajax-for-node');
 
