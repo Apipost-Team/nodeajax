@@ -5,7 +5,7 @@
 </p>
 
 # 🚀 nodeajax
-Implementing Ajax request of jQuery with node.
+Implementing Ajax request of jQuery with node without cross-domain.
 ## Install
 
 ```

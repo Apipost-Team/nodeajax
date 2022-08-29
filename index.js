@@ -37,7 +37,7 @@ function nodeAjax(options) {
     }
 
     if (_.has(options, 'complete') && _.isFunction(options.complete)) {
-      options.complete(null, 'success');
+      options.complete(null, 'error');
     }
   });
 }
