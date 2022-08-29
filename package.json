@@ -15,7 +15,8 @@
     "ajax",
     "node",
     "xhr",
-    "axios"
+    "axios",
+    "cross-domain"
   ],
   "author": "apipost-lab001 <admin@apipost.cn> (https://github.com/Apipost-Team)",
   "license": "MIT",
