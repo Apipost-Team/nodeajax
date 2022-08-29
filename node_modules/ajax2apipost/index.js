@@ -1,7 +1,7 @@
 const _ = require('lodash'),
     apipostTools = require('apipost-tools'),
     uuid = require('uuid');
-    // apipostRequest = require('apipost-send');
+// apipostRequest = require('apipost-send');
 
 function ajaxPara2Apipost(request) {
     const obj = {};
@@ -100,10 +100,14 @@ function ajaxPara2Apipost(request) {
             _.set(obj, 'request.body.parameter', []);
             _.set(obj, 'request.body.raw', request.data);
         }
-
-        // auth
-        _.set(obj, 'request.auth.type', 'noauth');
+    } else {
+        _.set(obj, 'request.body.mode', 'none');
+        _.set(obj, 'request.body.parameter', []);
+        _.set(obj, 'request.body.raw', '');
     }
+
+    // auth
+    _.set(obj, 'request.auth.type', 'noauth');
 
     return obj;
 }

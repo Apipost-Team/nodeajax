@@ -1,6 +1,6 @@
 {
   "name": "ajax2apipost",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert common jquery Ajax parameter formats to Apipost standard parameter formats.",
   "main": "index.js",
   "scripts": {
