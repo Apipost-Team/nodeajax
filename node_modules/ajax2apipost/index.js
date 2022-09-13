@@ -1,5 +1,6 @@
 const _ = require('lodash'),
     apipostTools = require('apipost-tools'),
+    FormData = require('form-data'), // add module 0913
     uuid = require('uuid');
 // apipostRequest = require('apipost-send');
 
