@@ -19,12 +19,13 @@ async function nodeAjax(options) {
   await request.request(_target).then((data) => {
     if (_.isObject(data) && data.status == 'success' && _.has(data, 'data.response.rawBody')) {
       let res = data.data.response.rawBody;
+      let ext = { "cookies": data.data.response["cookies"], "headers": data.data.response["headers"] };
       if (extTools.isJson5(data.data.response.rawBody)) {
         res = JSON5.parse(data.data.response.rawBody);
       }
 
       if (_.has(options, 'success') && _.isFunction(options.success)) {
-        options.success(res, 'success', null);
+        options.success(res, 'success', null, ext);
       }
 
       if (_.has(options, 'complete') && _.isFunction(options.complete)) {
