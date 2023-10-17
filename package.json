@@ -24,10 +24,9 @@
     "url": "https://github.com/Apipost-Team/nodeajax/issues"
   },
   "homepage": "https://github.com/Apipost-Team/nodeajax#readme",
-  "dependencies": {
-    "ajax2apipost": "^1.0.5"
-  },
+  "dependencies": {},
   "peerDependencies": {
+    "ajax-apipost": "^1.0.7",
     "apipost-send": ">=0.0.31",
     "apipost-tools": ">=0.0.29",
     "json5": ">=2.2.1",
