@@ -1,6 +1,6 @@
 {
   "name": "ajax-for-node",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Implementing Ajax request of jQuery with node.",
   "main": "index.js",
   "scripts": {
@@ -25,10 +25,12 @@
   },
   "homepage": "https://github.com/Apipost-Team/nodeajax#readme",
   "dependencies": {
-    "ajax2apipost": "^1.0.5",
-    "apipost-send": "^0.0.31",
-    "apipost-tools": "^0.0.20",
-    "json5": "^2.2.1",
-    "lodash": "^4.17.21"
+    "ajax2apipost": "^1.0.5"
+  },
+  "peerDependencies": {
+    "apipost-send": ">=0.0.31",
+    "apipost-tools": ">=0.0.29",
+    "json5": ">=2.2.1",
+    "lodash": ">=4.17.21"
   }
 }
